@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    text-align: center;
+    width: 100%; 
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0,0, 0.3),rgba(0, 0, 0, 0.5)), url('../image/flag.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(62, 60, 60, 0.593);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    position: fixed;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+    font-weight: 80;
+}
+nav .menu {
+    width: 40%; 
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+}
+/* nav .menu a:first-child{
+    color: #00b893c4;
+} */
+
+.burger{
+    display: none;
+}
+  
+main{
+    width: 100%;
+    height: 85vh;
+    /* background: wheat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+/* section{
+} */
+section h3{
+    font-size: 35px; font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+ section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+ } 
+section p{
+    margin-bottom: 25px;
+    font-size: 20px;
+    word-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center; 
+    padding: 0 300px 0 300px;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white;
+}
+section .button1{
+    background: #00b894;
+}
+
+section .button2{
+    background: #f39c5e;
+}
+.change_content:after{
+    content:'';
+    animation:changetext 20s infinite linear;
+    color:#00b894;
+}
+
+.slider-card h5{
+    font-size: 25px;
+}
+.slider-card p{
+    font-size: 25px;
+}
+
+
+@keyframes changetext{
+    0%{content: "Delhi";}
+    10%{content: "Gujrat";}
+    20%{content: "Rajasthan";}
+    30%{content: "Punjab";}
+    40%{content: "Mumbai";}
+    50%{content: "Banaras";}
+    60%{content: "West Bengal";}
+    70%{content: "Kerala";}
+    80%{content: "Sikkim";}
+    90%{content: "kashmir";}
+    100%{content: "Assam";}
+}
+
+/* responsive */
+@media only screen and (max-width: 1300px) {
+    header{
+        text-align: center;
+        width: 100%; 
+        height: 200vh;
+    }
+    section h3 {
+        margin-top: 200px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    
+    section p{
+        padding: 0; 
+    }
+}
+@media only screen and (max-width: 1300px) {
+    section h3 {
+        margin-top: 500px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    section h3{
+        font-size: 30px; 
+    }
+     section h1{
+        font-size: 40px;
+     }
+     nav{
+        height: 25vh;;
+     }
+     nav .menu{
+         display: table-column;
+     }        
+                
+
+}
+@media only screen and (max-width: 320px) {
+    section h3{
+        font-size: 20px; 
+    }
+     section h1{
+        font-size: 30px;
+     }
+    section .button1{
+        display: none;        
+    }
+}
